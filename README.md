@@ -6,7 +6,7 @@ On terminal run:
 export PYTHONPATH=$PYTHONPATH:/data/blobfuse/noaa_vm/antriv/notebooks/models/research:/data/blobfuse/noaa_vm/antriv/notebooks/models/research/slim
 
 # Prerequisites
-Python 3.5.5
+Python 3.5.5\n
 Check req.txt
 
 # Files Needed
