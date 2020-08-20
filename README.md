@@ -4,7 +4,7 @@
 
 On terminal run:
 
-export PYTHONPATH=$PYTHONPATH:/data/blobfuse/noaa_vm/antriv/notebooks/models/research:/data/blobfuse/noaa_vm/antriv/notebooks/models/research/slim
+export PYTHONPATH=$PYTHONPATH:<user_path>/models/research:<user_path>/models/research/slim
 
 # Prerequisites
 Python 3.5.5
@@ -29,21 +29,21 @@ If running for multiple videos, make sure they are all in one direcotry
 
 python noaa_imerit_2_main_inference_multiple_videoUse.py 
 
-  --pathVideo path to video directory(all video files) 
+  --pathVideo <path to video directory(all video files) >
   
-  --pathCSV path to directory in which csvs with frame numbers should go
+  --pathCSV <path to directory in which csvs with frame numbers should go>
   
-  --pathIMG path to directory in which images of frames from csv will go 
+  --pathIMG <path to directory in which images of frames from csv will go>
 
 # Fish Detection for Single Video(terminal):
 
 python noaa_imerit_1_main_inference_single_videoUse.py 
 
-  --pathVideo path to single video file
+  --pathVideo <path to single video file>
   
-  --pathCSV path to directory in which csv with frame numbers should go
+  --pathCSV <path to directory in which csv with frame numbers should go>
   
-  --pathIMG path to directory in which images of frames from csv will go  
+  --pathIMG <path to directory in which images of frames from csv will go>
 
 
 # Output Expected
