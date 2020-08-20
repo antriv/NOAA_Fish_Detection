@@ -11,7 +11,7 @@ Python 3.5.5
 
 Check req.txt
 
-If running for multiple videos, make sure they are all in one direcotry
+If running for multiple videos, make sure they are all in one directory
 
 # Files Needed
 - noaa_imerit_1_main_inference_single_videoUse.py
