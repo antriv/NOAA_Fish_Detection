@@ -7,8 +7,6 @@ req.txt
 
 If running for multiple videos, make sure they are all in one directory
 
-~ - make sure path name ends with a / 
-
 # Files Needed
 - noaa_imerit_1_main_inference_single_videoUse.py
   - Used to detect fish for one video
