@@ -46,8 +46,11 @@ If running for multiple videos, make sure they are all in one directory
 2. mkdir <dir_path>/Project_NOAA_imerit/outimg/csvfiles 
 
 3. python <dir_path>/models/research/object_detection/noaa_imerit_1_main_inference_single_videoUse.py 
+
    --pathVideo <dir_path>/Project_NOAA_imerit/data/test/videos/2019_GOPR1207_analyze.MP4 
+   
    --pathCSV <dir_path>/Project_NOAA_imerit/outimg/csvfiles/ 
+   
    --pathIMG <dir_path>/Project_NOAA_imerit/outimg/ 
 
 # Fish Detection for Multiple Video(terminal):
@@ -57,8 +60,11 @@ If running for multiple videos, make sure they are all in one directory
 2. mkdir <dir_path>/Project_NOAA_imerit/outimg/csvfiles 
 
 3. python <dir_path>/noaa_imerit_2_main_inference_multiple_videoUse.py 
+
     --pathVideo <dir_path>/Project_NOAA_imerit/data/test/videos/ 
+    
     --pathCSV <dir_path>/Project_NOAA_imerit/outimg/csvfiles/ 
+    
     --pathIMG <dir_path>/Project_NOAA_imerit/outimg/ 
 
 # Output Expected
