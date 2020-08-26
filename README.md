@@ -1,9 +1,12 @@
 # NOAA_Fish_Detection
+All codes are here: https://microsoft-my.sharepoint.com/:f:/p/antriv/EvhEqYagibZHkx4oe1x7YIgBlu907QDHgSre6E4xaL-uew?e=yYTieS
+Please download and extract the zip files.
+
 
 # Prerequisites
 Python: 3.5, CUDA: 10.0, CUDNN:7 
 
-req.txt
+download the "req.txt" file here
 
 If running for multiple videos, make sure they are all in one directory
 
