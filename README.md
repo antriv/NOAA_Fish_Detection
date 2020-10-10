@@ -71,11 +71,45 @@ If running for multiple videos, make sure they are all in one directory
     
     --pathIMG <dir_path>/Project_NOAA_imerit/outimg/ 
 
+# Detecting Stationary Objects(ie. rocks)
+1. Make sure you a csv is created from either running fish detection for multiple or single videoo 
+
+2. python noaa_imerit_main_condition_detection.py 
+
+     --pathCSV <dir_path>/Project_NOAA_imerit/outimg/csvfiles/<csv_name>
+     
+3. Key for each column in column:
+
+   video_name: name of video 
+   
+   frame_number: frame of the video 
+   
+   timestamp: time in video in which frame begans
+   
+   number_of_boxes: number of bounding boxes in the frame_number
+   
+   box_id: an id given for each bounding box per frame (format: BoundingBoxNumber_FrameNumber)
+   
+   x_min: x-coordinate of bottom left corner of the bounding box
+   
+   y_min: y-coordinate of bottom left corner of the bounding box
+   
+   x_max: x-coordinate of upper right corner of the bounding box
+   
+   y_max: y-coordinate of upper right corner of the bounding box
+   
+   condition: fixed if the bounding box is not moving or moving if bounding box is moving 
+   
+4. Change Threshold:
+
+   In noaa_imerit_main_condition_detection.py, change the MOVEMENT value. 
+
 # Output Expected
 
 - One CSV file for each video file in the CSV directory
   - Each csv file has the naming convention: <video name>_<model name (v1 or v2)>.csv
-  - Each csv lists the frame numbers(i.e. timestamps) at which the fish were detected
+  - Each csv has 10 columns: video_name, frame_number, timestamp, number_boxes, box_id, x_min, y_min, x_max, y_max, condition(is useful after running noaa_imerit_main_condition_detection.py ) 
+  
 - One IMAGE folder for each video in the IMAGE directory 
   - Each image folder has the naming convention:<video name>_<model name (v1 or v2)>
   - Each image within each folder has the naming convention:<video name>_<model name (v1 or v2)>_<frame number>.jpg
