@@ -56,6 +56,8 @@ If running for multiple videos, make sure they are all in one directory
    --pathCSV <dir_path>/Project_NOAA_imerit/outimg/csvfiles/ 
    
    --pathIMG <dir_path>/Project_NOAA_imerit/outimg/ 
+   
+4. 
 
 # Fish Detection for Multiple Video(terminal):
 
@@ -70,21 +72,22 @@ If running for multiple videos, make sure they are all in one directory
     --pathCSV <dir_path>/Project_NOAA_imerit/outimg/csvfiles/ 
     
     --pathIMG <dir_path>/Project_NOAA_imerit/outimg/ 
+4. 
 
-# Detecting Stationary Objects(ie. rocks)
-1. Make sure you a csv is created from either running fish detection for multiple or single videoo 
+## Tracking Objects
+1. For this step, make sure that a csv is created from either running fish detection for multiple or single video 
 
 2. python noaa_imerit_main_condition_detection.py 
 
      --pathCSV <dir_path>/Project_NOAA_imerit/outimg/csvfiles/<csv_name>
      
-3. Key for each column in column:
+3. Step 2 generates a csv. Key for each column in output csv:
 
    video_name: name of video 
    
    frame_number: frame of the video 
    
-   timestamp: time in video in which frame begans
+   timestamp: time in video in which frame begins
    
    number_of_boxes: number of bounding boxes in the frame_number
    
@@ -100,7 +103,7 @@ If running for multiple videos, make sure they are all in one directory
    
    condition: fixed if the bounding box is not moving or moving if bounding box is moving 
    
-4. Change Threshold:
+4. If you want to change threshold:
 
    In noaa_imerit_main_condition_detection.py, change the MOVEMENT value. 
 
