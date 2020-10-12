@@ -95,25 +95,25 @@ If running for multiple videos, make sure they are all in one directory
   - Each csv has 10 columns: video_name, frame_number, timestamp, number_boxes, box_id, x_min, y_min, x_max, y_max, condition(is useful after running noaa_imerit_main_condition_detection.py ) 
   - Key for each csv column
   
-   video_name: name of video 
+      video_name: name of video 
    
-   frame_number: frame of the video 
+      frame_number: frame of the video 
    
-   timestamp: time in video in which frame begins
+      timestamp: time in video in which frame begins
    
-   number_of_boxes: number of bounding boxes in the frame_number
+      number_of_boxes: number of bounding boxes in the frame_number
    
-   box_id: an id given for each bounding box per frame (format: BoundingBoxNumber_FrameNumber)
+      box_id: an id given for each bounding box per frame (format: BoundingBoxNumber_FrameNumber)
    
-   x_min: x-coordinate of bottom left corner of the bounding box
+      x_min: x-coordinate of bottom left corner of the bounding box
    
-   y_min: y-coordinate of bottom left corner of the bounding box
+      y_min: y-coordinate of bottom left corner of the bounding box
    
-   x_max: x-coordinate of upper right corner of the bounding box
+      x_max: x-coordinate of upper right corner of the bounding box
    
-   y_max: y-coordinate of upper right corner of the bounding box
+      y_max: y-coordinate of upper right corner of the bounding box
    
-   condition: "fixed" if the bounding box is not moving. "moving" if bounding box is moving 
+      condition: "fixed" if the bounding box is not moving. "moving" if bounding box is moving 
   
 - One IMAGE folder for each video in the IMAGE directory 
   - Each image folder has the naming convention:<video name>_<model name (v1 or v2)>
