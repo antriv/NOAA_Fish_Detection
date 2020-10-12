@@ -57,7 +57,9 @@ If running for multiple videos, make sure they are all in one directory
    
    --pathIMG <dir_path>/Project_NOAA_imerit/outimg/ 
    
-4. 
+4. This will produce one csv file. The last column of the csv file will be set to "moving" for all rows as a default. However the headers of the other columns       
+   
+   each row's details. 
 
 # Fish Detection for Multiple Video(terminal):
 
@@ -72,7 +74,10 @@ If running for multiple videos, make sure they are all in one directory
     --pathCSV <dir_path>/Project_NOAA_imerit/outimg/csvfiles/ 
     
     --pathIMG <dir_path>/Project_NOAA_imerit/outimg/ 
-4. 
+    
+4. This will produce a csv file for each video. The last column of the csv file will be set to "moving" for all rows as a default. However the headers of the other        
+   
+   columns each row's details.
 
 ## Tracking Objects
 1. For this step, make sure that a csv is created from either running fish detection for multiple or single video 
@@ -101,7 +106,7 @@ If running for multiple videos, make sure they are all in one directory
    
    y_max: y-coordinate of upper right corner of the bounding box
    
-   condition: fixed if the bounding box is not moving or moving if bounding box is moving 
+   condition: "fixed" if the bounding box is not moving. "moving" if bounding box is moving 
    
 4. If you want to change threshold:
 
