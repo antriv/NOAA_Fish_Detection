@@ -57,9 +57,7 @@ If running for multiple videos, make sure they are all in one directory
    
    --pathIMG <dir_path>/Project_NOAA_imerit/outimg/ 
    
-4. This will produce one csv file. The last column of the csv file will be set to "moving" for all rows as a default. However the headers of the other columns       
-   
-   each row's details. 
+4. This will produce one csv file. The last column of the csv file will be set to "moving" for all rows as a default.
 
 # Fish Detection for Multiple Video(terminal):
 
@@ -75,9 +73,7 @@ If running for multiple videos, make sure they are all in one directory
     
     --pathIMG <dir_path>/Project_NOAA_imerit/outimg/ 
     
-4. This will produce a csv file for each video. The last column of the csv file will be set to "moving" for all rows as a default. However the headers of the other        
-   
-   columns each row's details.
+4. This will produce a csv file for each video. The last column of the csv file will be set to "moving" for all rows as a default. 
 
 ## Tracking Objects
 1. For this step, make sure that a csv is created from either running fish detection for multiple or single video 
@@ -86,8 +82,19 @@ If running for multiple videos, make sure they are all in one directory
 
      --pathCSV <dir_path>/Project_NOAA_imerit/outimg/csvfiles/<csv_name>
      
-3. Step 2 generates a csv. Key for each column in output csv:
+3. Step 2 modifies last column of csv. Some values will be "fixed" if no movement was detected. Otherwise it will remain "moving". 
+   
+4. If you want to change threshold:
 
+   In noaa_imerit_main_condition_detection.py, change the MOVEMENT value. 
+
+# Output Expected
+
+- One CSV file for each video file in the CSV directory
+  - Each csv file has the naming convention: <video name>_<model name (v1 or v2)>.csv
+  - Each csv has 10 columns: video_name, frame_number, timestamp, number_boxes, box_id, x_min, y_min, x_max, y_max, condition(is useful after running noaa_imerit_main_condition_detection.py ) 
+  - Key for each csv column
+  
    video_name: name of video 
    
    frame_number: frame of the video 
@@ -107,16 +114,6 @@ If running for multiple videos, make sure they are all in one directory
    y_max: y-coordinate of upper right corner of the bounding box
    
    condition: "fixed" if the bounding box is not moving. "moving" if bounding box is moving 
-   
-4. If you want to change threshold:
-
-   In noaa_imerit_main_condition_detection.py, change the MOVEMENT value. 
-
-# Output Expected
-
-- One CSV file for each video file in the CSV directory
-  - Each csv file has the naming convention: <video name>_<model name (v1 or v2)>.csv
-  - Each csv has 10 columns: video_name, frame_number, timestamp, number_boxes, box_id, x_min, y_min, x_max, y_max, condition(is useful after running noaa_imerit_main_condition_detection.py ) 
   
 - One IMAGE folder for each video in the IMAGE directory 
   - Each image folder has the naming convention:<video name>_<model name (v1 or v2)>
