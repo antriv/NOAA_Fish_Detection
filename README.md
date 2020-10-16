@@ -91,7 +91,7 @@ If running for multiple videos, make sure they are all in one directory
 
 - One CSV file for each video file in the CSV directory
   - Regular csv file has the naming convention: <video name>_<model name (v1 or v2)>.csv
-  - Tracking Object csv file has the naming convention: <threshold>_<video name>_<model name (v1 or v2)>_condition_detection.csv
+  - Tracking Object csv file has the naming convention: <csv name>_<threshold>_condition_detection.csv
   - Each csv has 10 columns: video_name, frame_number, timestamp, number_boxes, box_id, x_min, y_min, x_max, y_max, condition(is useful after running noaa_imerit_main_condition_detection.py ) 
   - Key for each csv column
   
