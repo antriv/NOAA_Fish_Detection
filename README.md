@@ -91,8 +91,9 @@ If running for multiple videos, make sure they are all in one directory
    
 # Output Expected
 
-- One CSV file for each video file in the CSV directory
-  - Regular csv file has the naming convention: <video name>_<model name (v1 or v2)>.csv
+- Two CSV files for each video file in the CSV directory
+  - Original csv file has the naming convention: <video name>_<model name (v1 or v2)>.csv
+  - Bounding box id 
   - Tracking Object csv file has the naming convention: <csv name>_<threshold>_condition_detection.csv
   - Each csv has 10 columns: video_name, frame_number, timestamp, number_boxes, box_id, x_min, y_min, x_max, y_max, condition(is useful after running noaa_imerit_main_condition_detection.py ) 
   - Key for each csv column
@@ -103,10 +104,10 @@ If running for multiple videos, make sure they are all in one directory
    
       timestamp: time in video in which frame begins
    
-      number_of_boxes: number of bounding boxes in the frame_number
-   
-      box_id: an id given for each bounding box per frame (format: BoundingBoxNumber_FrameNumber)
-   
+      number_boxes: number of bounding boxes in the frame_number
+      
+      index: ith bounding box in frame_number
+      
       x_min: x-coordinate of bottom left corner of the bounding box
    
       y_min: y-coordinate of bottom left corner of the bounding box
@@ -114,8 +115,9 @@ If running for multiple videos, make sure they are all in one directory
       x_max: x-coordinate of upper right corner of the bounding box
    
       y_max: y-coordinate of upper right corner of the bounding box
+      
+      box_id: an id given to the bounding box 
    
-      condition: "fixed" if the bounding box is not moving. "moving" if bounding box is moving 
   
 - One IMAGE folder for each video in the IMAGE directory 
   - Each image folder has the naming convention:<video name>_<model name (v1 or v2)>
