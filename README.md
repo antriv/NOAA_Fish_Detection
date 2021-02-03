@@ -113,7 +113,7 @@ If running for multiple videos, make sure they are all in one directory
    
       y_max: y-coordinate of upper right corner of the bounding box
       
-      box_id: an id given to the bounding box(initially 0, changes after running noaa_imerit_main_condition_detection.py is run. 
+      box_id: an id given to the bounding box(initially 0, changes after running noaa_imerit_main_condition_detection.py) 
       
   - Bounding Box Timestamp csv file has naming convention: <csv name>__bounding_box_timestamp.csv
   - The csv has 5 columns: video_name, bounding_box_id, start_time, end_time, duration 
