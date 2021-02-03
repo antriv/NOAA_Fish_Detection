@@ -77,7 +77,7 @@ If running for multiple videos, make sure they are all in one directory
     
 4. This will produce a csv file for each video. The last column of each csv file will be set to 0 for all rows as a default. 
 
-## Labeling Bounding Box IDs
+# Labeling Bounding Box IDs
 1. For this step, make sure that a csv is created from either running fish detection for multiple or single video 
 
 2. python noaa_imerit_main_condition_detection.py 
