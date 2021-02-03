@@ -119,9 +119,9 @@ If running for multiple videos, make sure they are all in one directory
   - The csv has 5 columns: video_name, bounding_box_id, start_time, end_time, duration 
   - Key for each csv column:
   
-      video_name = name of video 
+      video_name: name of video 
       
-      bounding_box_id = id of the bounding box 
+      bounding_box_id: id of the bounding box 
       
       start_time: time of first appearance of bounding box 
       
