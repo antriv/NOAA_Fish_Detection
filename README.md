@@ -1,5 +1,7 @@
 # NOAA_Fish_Detection
-All codes are here: https://microsoft-my.sharepoint.com/:f:/p/antriv/EvhEqYagibZHkx4oe1x7YIgBlu907QDHgSre6E4xaL-uew?e=yYTieS
+All codes are [here](https://drive.google.com/drive/folders/1hSCJbCL-7suhsSU8RW2tdKQ5vmUUgCL1): 
+May need permission to access folder
+<!---Outdated Link: https://microsoft-my.sharepoint.com/:f:/p/antriv/EvhEqYagibZHkx4oe1x7YIgBlu907QDHgSre6E4xaL-uew?e=yYTieS-->
 
 Please download and extract the zip files.
 
